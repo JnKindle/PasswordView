@@ -15,6 +15,7 @@
 		D73E3388211410A400E14F1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D73E3387211410A400E14F1A /* main.m */; };
 		D73E3392211410A400E14F1A /* PasswordViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D73E3391211410A400E14F1A /* PasswordViewTests.m */; };
 		D73E339D211410A400E14F1A /* PasswordViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D73E339C211410A400E14F1A /* PasswordViewUITests.m */; };
+		D73E33AD211410CC00E14F1A /* JnPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = D73E33AC211410CC00E14F1A /* JnPasswordView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		D73E3398211410A400E14F1A /* PasswordViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73E339C211410A400E14F1A /* PasswordViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordViewUITests.m; sourceTree = "<group>"; };
 		D73E339E211410A400E14F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D73E33AB211410CC00E14F1A /* JnPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JnPasswordView.h; sourceTree = "<group>"; };
+		D73E33AC211410CC00E14F1A /* JnPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JnPasswordView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		D73E3377211410A200E14F1A /* PasswordView */ = {
 			isa = PBXGroup;
 			children = (
+				D73E33AA211410CC00E14F1A /* JnPasswordView */,
 				D73E3378211410A200E14F1A /* AppDelegate.h */,
 				D73E3379211410A200E14F1A /* AppDelegate.m */,
 				D73E337B211410A200E14F1A /* ViewController.h */,
@@ -130,6 +134,15 @@
 				D73E339E211410A400E14F1A /* Info.plist */,
 			);
 			path = PasswordViewUITests;
+			sourceTree = "<group>";
+		};
+		D73E33AA211410CC00E14F1A /* JnPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				D73E33AB211410CC00E14F1A /* JnPasswordView.h */,
+				D73E33AC211410CC00E14F1A /* JnPasswordView.m */,
+			);
+			path = JnPasswordView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D73E337D211410A200E14F1A /* ViewController.m in Sources */,
+				D73E33AD211410CC00E14F1A /* JnPasswordView.m in Sources */,
 				D73E3388211410A400E14F1A /* main.m in Sources */,
 				D73E337A211410A200E14F1A /* AppDelegate.m in Sources */,
 			);

@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "JnPasswordView.h"
+
 @interface ViewController ()
 
 @end
@@ -16,13 +18,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *tempBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    tempBtn.backgroundColor = [UIColor orangeColor];
+    tempBtn.frame = CGRectMake(50, 100, 100, 50);
+    [tempBtn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:tempBtn];
+    
+    
+    
+}
+
+- (void)click:(UIButton *)senderr
+{
+    [[JnPasswordView sharedInstance] showPasswordViewWithInputPwd:^(NSString *pwd) {
+        NSLog(@"pwd = %@",pwd);
+    } cancel:^{
+        NSLog(@"点击了取消");
+    } certain:^{
+        NSLog(@"点击了确定");
+    }];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 
